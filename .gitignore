@@ -29,6 +29,7 @@ Thumbs.db
 *.a
 *.out
 *.h
+*.cfg
 
 # Ignore environment files
 *.env

@@ -30,6 +30,11 @@ Thumbs.db
 *.out
 *.h
 *.cfg
+*.toc
+*.aux
+*.log
+*.gz
+*.toc
 
 # Ignore environment files
 *.env
@@ -41,3 +46,4 @@ lib/
 Scripts/
 etc/
 share/
+

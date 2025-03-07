@@ -1,0 +1,106 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor} % for syntax highlighting colors (optional)
+\usepackage{float}
+\usepackage{titling}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{fontspec}
+\usepackage{lmodern}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{green},
+  stringstyle=\color{orange},
+  breaklines=false
+}
+
+%\pretitle{%
+%  \noindent
+%  \includegraphics[width=0.2\textwidth]{UOT_logo_transp.png}%
+%  \hfill
+%  \includegraphics[width=0.2\textwidth]{SWE_Dept_logo_transp.png}%
+% \vspace{1em}%
+%}
+
+\title{Multi LLM Mobile Chat Application empowered with DSPy}
+\author{Sanad AlArousi}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        %\includegraphics[width=0.2\textwidth]{UOT_logo_transp.png}\hfill
+        %\includegraphics[width=0.2\textwidth]{Faculty_logo_transp.png}\hfill
+        %\hspace*{\fill}
+        %\includegraphics[width=0.2\textwidth]{SWE_Dept_logo_transp.png}
+        \fontsize{24}{24}\textbf{University of Tripoli}\\[10pt]
+        % Faculty of IT in size 22 and bold
+        \fontsize{22}{22}\textbf{Faculty of Information Technology}\\[10pt]
+        % Title in size 26 and bold
+        \fontsize{26}{26}\textbf{Bachelor of Information Technology}\\[10pt]
+        \vfill
+        \Huge{Prompt Programming using DSPy}\\
+        \Large{}
+        \vfill
+
+        \textit{Sanad Alarousi 2181801442}\\
+        Department of Software Engineering\\
+        University of Tripoli\\
+        Spring - 2025\\
+        \today
+    \end{center}
+    \begin{textblock*}{3cm}(1cm,1cm)
+        \includegraphics[width=3cm]{UOT_logo_transp.png}
+    \end{textblock*}
+    \begin{textblock*}{3cm}(17cm,1cm)
+        \includegraphics[width=3cm]{Faculty_logo_transp.png}
+    \end{textblock*}
+\end{titlepage}
+
+\maketitle
+
+\section{Introduction}
+
+This is a sample document.\newline
+here is a bullet list:
+\begin{itemize}
+    \item First Bullet item
+    \item Second item
+    \item Third item
+\end{itemize}
+now here is an enumerated/numbered list:
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\section{Hi 2}
+\subsection{Hi 2.1}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.2\textwidth, height=2cm]{temp.jpeg}
+    \caption{Sigma, aka ME}
+    \label{fig:sample}
+\end{figure}
+\subsection{Hi 2.2}
+\subsubsection{2.2.1}
+hi inline code: \lstinline|print(f'Y Predictions: \n {y_preds}')|
+\newline
+hi block code:
+\begin{lstlisting}
+def hello_world():
+    print("Hello, World!")
+\end{lstlisting}
+
+\section{Hi 3}
+
+\section{Hi 4}
+
+\end{document}

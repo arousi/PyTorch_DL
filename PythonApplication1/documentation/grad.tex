@@ -1,0 +1,98 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{geometry}
+
+% Set margins
+\geometry{
+	left=3.5cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm
+}
+
+% Set font
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% Line spacing
+\onehalfspacing
+
+% Section styles
+\titleformat{\section}
+{\normalfont\fontsize{16}{20}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\fontsize{14}{18}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\fontsize{12}{16}\bfseries\itshape}{\thesubsubsection}{1em}{}
+
+% Cover Page
+\newcommand{\coverpage}{
+	\begin{titlepage}
+		\begin{center}
+			\fontsize{22}{22}\selectfont\textbf{University of Tripoli}\\[10pt]
+			\vfill
+			\fontsize{24}{24}\selectfont\textbf{Title of my grad project}\\[20pt]
+			\fontsize{14}{14}\selectfont{Sanad Alarousi}\\[10pt]
+			\fontsize{20}{20}\selectfont\textbf{Bachelor of Information Technology}\\[10pt]
+			\fontsize{20}{20}\selectfont{Spring - 2025}\\
+		\end{center}
+	\end{titlepage}
+}
+
+% Title Page
+\newcommand{\titlepagecustom}{
+	\begin{titlepage}
+		\begin{textblock*}{5cm}(1cm,1cm)
+			\fontsize{22}{22}\selectfont\textbf{University of Tripoli}
+		\end{textblock*}
+		\begin{textblock*}{7cm}(1cm,3cm)
+			\fontsize{20}{20}\selectfont\textbf{Faculty of Information Technology}
+		\end{textblock*}
+		\begin{center}
+			\vfill
+			\fontsize{18}{18}\selectfont\textbf{Department of Software Engineering}\\[20pt]
+			\fontsize{24}{24}\selectfont\textbf{Title of my grad project}\\[20pt]
+			\fontsize{12}{12}\selectfont{In partial fulfillment of the requirements for the degree Bachelor of Science in Information Technology}\\[20pt]
+			\fontsize{14}{14}\selectfont{Sanad Alarousi}\\[10pt]
+			\fontsize{14}{14}\selectfont{Supervisor: [Supervisor Name]}\\
+			\vfill
+		\end{center}
+	\end{titlepage}
+}
+
+\begin{document}
+	
+
+	\coverpage
+	
+
+	\titlepagecustom
+	
+	% Table of Contents
+	\tableofcontents
+	
+	% Sample Sections
+	\chapter{Introduction}
+	This is the introduction.
+	
+	\section{Main Section}
+	This is a main section.
+	
+	\subsection{Subsection 1}
+	This is the first subsection.
+	
+	\subsubsection{Subsection 2}
+	This is the second subsection.
+	
+	\subsubsection{Subsection 3}
+	This is the third subsection.
+	
+	\section{Conclusion}
+	This is the conclusion.
+	
+\end{document}
